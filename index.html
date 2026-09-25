@@ -36,6 +36,8 @@
       <div class="hero-media" aria-hidden="true">
         <img src="assets/img/hero.jpg" alt="" width="1800" height="1200" fetchpriority="high">
       </div>
+      <div class="float-orb float-orb--a" data-parallax="0.12" aria-hidden="true"></div>
+      <div class="float-orb float-orb--b" data-parallax="0.08" aria-hidden="true"></div>
       <div class="container hero-content">
         <p class="eyebrow">Redding &amp; Shasta County · Mobile</p>
         <h1>We Give You Time For The Things You Love</h1>
@@ -45,31 +47,43 @@
           <a class="btn btn-ghost-light" href="tel:+15303395877">Call (530) 339-5877</a>
         </div>
       </div>
+      <div class="hero-stack" data-parallax="0.18" aria-hidden="true">
+        <div class="hero-stack__frame hero-stack__frame--1">
+          <img src="assets/img/strip-1.jpg" alt="" width="800" height="600" loading="lazy">
+        </div>
+        <div class="hero-stack__frame hero-stack__frame--2">
+          <img src="assets/img/story-new.jpg" alt="" width="800" height="600" loading="lazy">
+        </div>
+        <div class="hero-stack__frame hero-stack__frame--3">
+          <img src="assets/img/strip-3.jpg" alt="" width="600" height="600" loading="lazy">
+        </div>
+      </div>
       <div class="hero-scroll-hint" aria-hidden="true">Scroll</div>
     </section>
 
-    <section class="section section-panel">
+    <section class="section section-panel has-orbs">
+      <div class="float-orb float-orb--c" data-parallax="0.1" aria-hidden="true"></div>
       <div class="container">
         <div class="section-head centered reveal">
           <h2>Car care that fits your life</h2>
           <p>Mobile detailing done right — clean results, local service, and time you can actually spend on what matters.</p>
         </div>
         <div class="value-grid">
-          <article class="value-card reveal">
+          <article class="value-card tilt-card reveal">
             <div class="value-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17h18M5 17l1.5-6h11L19 17M8 11V8a1 1 0 011-1h6a1 1 0 011 1v3M7 17v2M17 17v2"/></svg>
             </div>
             <h3>We come to you</h3>
             <p>Mobile detailing across Redding, CA and Shasta County — at home, work, or wherever your vehicle is.</p>
           </article>
-          <article class="value-card reveal">
+          <article class="value-card tilt-card reveal">
             <div class="value-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
             <h3>Inside and outside</h3>
             <p>From a thorough vacuum and wipe-down to hand-wash, wheels, wax, and full deluxe packages.</p>
           </article>
-          <article class="value-card reveal">
+          <article class="value-card tilt-card reveal">
             <div class="value-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             </div>
@@ -87,15 +101,15 @@
           <p>Photos from our detailing — look-new finishes, mobile service, and care for both the cabin and the exterior.</p>
         </div>
         <div class="story-grid">
-          <figure class="story-card reveal">
+          <figure class="story-card reveal reveal-scale">
             <img src="assets/img/story-new.jpg" alt="Freshly detailed vehicle with a glossy, like-new finish" width="1200" height="900" loading="lazy">
             <figcaption>We make your vehicle look like new</figcaption>
           </figure>
-          <figure class="story-card reveal">
+          <figure class="story-card reveal reveal-right">
             <img src="assets/img/story-mobile.jpg" alt="Mobile detailing setup serving Redding, California" width="1200" height="900" loading="lazy">
             <figcaption>Mobile detailing to Redding, CA</figcaption>
           </figure>
-          <figure class="story-card reveal">
+          <figure class="story-card reveal reveal-left">
             <img src="assets/img/story-inside.jpg" alt="Clean vehicle interior after vacuum, wipe-down, and detailing" width="1200" height="900" loading="lazy">
             <figcaption>We detail the inside…</figcaption>
           </figure>
@@ -125,7 +139,7 @@
           <p>Three marketed packages — full inclusions and price ranges. Final pricing depends on vehicle type when you book.</p>
         </div>
         <div class="pkg-grid">
-          <article class="pkg-card reveal">
+          <article class="pkg-card tilt-card reveal">
             <div class="pkg-media">
               <img src="assets/img/pkg-interior.jpg" alt="Interior detailing in progress — seats and cabin" width="1200" height="825" loading="lazy">
             </div>
@@ -142,7 +156,7 @@
               <a class="btn btn-secondary" href="packages.html">See details</a>
             </div>
           </article>
-          <article class="pkg-card featured reveal">
+          <article class="pkg-card featured tilt-card reveal">
             <div class="pkg-media">
               <span class="pkg-badge">Popular</span>
               <img src="assets/img/pkg-exterior.jpg" alt="Exterior hand-wash and wheel cleaning on a vehicle" width="1200" height="825" loading="lazy">
@@ -161,7 +175,7 @@
               <a class="btn btn-primary" href="packages.html">See details</a>
             </div>
           </article>
-          <article class="pkg-card reveal">
+          <article class="pkg-card tilt-card reveal">
             <div class="pkg-media">
               <img src="assets/img/pkg-deluxe.jpg" alt="Fully detailed vehicle after deluxe interior and exterior service" width="1200" height="825" loading="lazy">
             </div>
@@ -206,14 +220,14 @@
 
     <section class="section-sm section-dark">
       <div class="container">
-        <div class="photo-strip reveal">
-          <figure>
+        <div class="photo-strip">
+          <figure class="reveal reveal-left">
             <img src="assets/img/strip-1.jpg" alt="Detailing results — clean exterior finish" width="1000" height="750" loading="lazy">
           </figure>
-          <figure>
+          <figure class="reveal">
             <img src="assets/img/strip-2.jpg" alt="Close-up of professional mobile detailing work" width="1000" height="750" loading="lazy">
           </figure>
-          <figure>
+          <figure class="reveal reveal-right">
             <img src="assets/img/strip-3.jpg" alt="Vehicle after Clean Detailing service" width="1000" height="750" loading="lazy">
           </figure>
         </div>
