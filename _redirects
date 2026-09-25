@@ -1,0 +1,6 @@
+# Pretty URLs (optional aliases matching old Squarespace paths)
+/home               /index.html  200
+/mobiledetailingpackages  /packages.html  200
+/aboutus            /about.html  200
+/mobiledetailingmembership  /membership.html  200
+/contactus          /contact.html  200
