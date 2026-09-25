@@ -48,7 +48,7 @@ Do **not** use the Squarespace demo owner `14537778`.
 
 - **Accent:** crisp teal `#12B8A6`
 - **Surfaces:** near-black `#121416`, white, warm off-white `#F7F5F2`
-- **Type:** Outfit (headings) + Source Sans 3 (body) via Google Fonts
+- **Type:** Fraunces (headings) + Nunito Sans (body) via Google Fonts
 - Photos from the live site (optimized under `assets/img/`)
 
 ## Contact constants (verified)
