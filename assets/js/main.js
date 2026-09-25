@@ -2,10 +2,19 @@
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".nav");
+  var heroMedia = document.querySelector(".hero-media");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function onScroll() {
     if (!header) return;
     header.classList.toggle("is-scrolled", window.scrollY > 8);
+
+    if (heroMedia && !reduceMotion) {
+      var y = window.scrollY;
+      // Subtle parallax: media drifts slower than scroll
+      var offset = Math.min(y * 0.35, 180);
+      heroMedia.style.transform = "translate3d(0, " + offset + "px, 0)";
+    }
   }
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
