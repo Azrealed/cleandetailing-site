@@ -356,35 +356,6 @@ li { margin-bottom: 0.35em; }
 }
 .hero .btn-row { margin-top: 1.75rem; }
 
-.hero-scroll-hint {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-  color: rgba(255,255,255,0.55);
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-.hero-scroll-hint::after {
-  content: "";
-  width: 1px;
-  height: 36px;
-  background: linear-gradient(var(--accent), transparent);
-  animation: scroll-pulse 1.8s var(--ease) infinite;
-}
-@keyframes scroll-pulse {
-  0%, 100% { opacity: 0.35; transform: scaleY(0.7); transform-origin: top; }
-  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-}
-
 /* ----- Sections ----- */
 .section {
   padding: 5rem 0;
@@ -1275,7 +1246,6 @@ li { margin-bottom: 0.35em; }
   }
   .reveal { opacity: 1; transform: none; }
   .hero-media { transform: none !important; }
-  .hero-scroll-hint::after { animation: none; }
   .tilt-card,
   .tilt-card.is-tilting {
     transform: none !important;
@@ -1301,7 +1271,6 @@ li { margin-bottom: 0.35em; }
   .hero-content { padding: 4rem 0 3.5rem; }
   .nav a { font-size: 1.1rem; }
   .btn { font-size: 1.05rem; }
-  .hero-scroll-hint { display: none; }
 }
 
 
@@ -2201,7 +2170,7 @@ li { margin-bottom: 0.35em; }
 }
 
 /* =========================================================
-   Hero cleanup — no right stack; CTAs clear of scroll/sticky
+   Hero cleanup — no right stack; no scroll hint under CTAs
    ========================================================= */
 
 /* Remove right photo stack entirely */
@@ -2217,8 +2186,7 @@ li { margin-bottom: 0.35em; }
   position: relative;
   z-index: 5;
   max-width: 640px;
-  /* Extra bottom pad so CTAs sit above the scroll hint */
-  padding: 6.75rem 0 7.5rem;
+  padding: 6.75rem 0 5.5rem;
   padding-right: 0;
 }
 .hero .eyebrow {
@@ -2237,13 +2205,6 @@ li { margin-bottom: 0.35em; }
   z-index: 6;
   margin-top: 2.5rem;
   gap: 1.25rem;
-}
-
-/* Scroll hint sits below CTA row, never underneath buttons */
-.hero-scroll-hint {
-  z-index: 2;
-  bottom: 1.35rem;
-  pointer-events: none;
 }
 
 /* Sticky splash stays under header; following content paints above it */
@@ -2280,7 +2241,7 @@ li { margin-bottom: 0.35em; }
 @media (min-width: 980px) {
   .hero-content {
     max-width: 640px;
-    padding: 7.25rem 0 8rem;
+    padding: 7.25rem 0 6rem;
   }
 }
 
@@ -2308,7 +2269,6 @@ li { margin-bottom: 0.35em; }
     margin-top: 2rem;
     gap: 0.95rem;
   }
-  .hero-scroll-hint { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
