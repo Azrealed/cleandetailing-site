@@ -33,21 +33,29 @@
 
   <main>
     <section class="hero">
-      <div class="hero-media" aria-hidden="true">
+      <div class="hero-media" data-parallax-layer="0.38" aria-hidden="true">
         <img src="assets/img/hero.jpg" alt="" width="1800" height="1200" fetchpriority="high">
       </div>
-      <div class="float-orb float-orb--a" data-parallax="0.12" aria-hidden="true"></div>
-      <div class="float-orb float-orb--b" data-parallax="0.08" aria-hidden="true"></div>
-      <div class="container hero-content">
+      <div class="hero-midglow" data-parallax-layer="0.22" aria-hidden="true"></div>
+      <div class="hero-sheen" aria-hidden="true"></div>
+      <div class="hero-streaks" aria-hidden="true">
+        <span class="streak streak--1"></span>
+        <span class="streak streak--2"></span>
+        <span class="streak streak--3"></span>
+      </div>
+      <div class="float-orb float-orb--a" data-parallax="0.16" aria-hidden="true"></div>
+      <div class="float-orb float-orb--b" data-parallax="0.1" aria-hidden="true"></div>
+      <div class="float-orb float-orb--d" data-parallax="0.2" aria-hidden="true"></div>
+      <div class="container hero-content" data-parallax-layer="0.06">
         <p class="eyebrow">Redding &amp; Shasta County · Mobile</p>
         <h1>We Give You Time For The Things You Love</h1>
         <p class="hero-lead">Professional interior and exterior mobile detailing — we come to you, so you get your day back.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="#book">Schedule an appointment</a>
+          <a class="btn btn-primary btn-shimmer" href="#book">Schedule an appointment</a>
           <a class="btn btn-ghost-light" href="tel:+15303395877">Call (530) 339-5877</a>
         </div>
       </div>
-      <div class="hero-stack" data-parallax="0.18" aria-hidden="true">
+      <div class="hero-stack" data-parallax="0.24" aria-hidden="true">
         <div class="hero-stack__frame hero-stack__frame--1">
           <img src="assets/img/strip-1.jpg" alt="" width="800" height="600" loading="lazy">
         </div>
@@ -59,6 +67,7 @@
         </div>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true">Scroll</div>
+      <div class="diag-edge diag-edge--bottom" aria-hidden="true"></div>
     </section>
 
     <section class="section section-panel has-orbs">
@@ -69,21 +78,21 @@
           <p>Mobile detailing done right — clean results, local service, and time you can actually spend on what matters.</p>
         </div>
         <div class="value-grid">
-          <article class="value-card tilt-card reveal">
+          <article class="value-card tilt-card glow-edge reveal">
             <div class="value-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17h18M5 17l1.5-6h11L19 17M8 11V8a1 1 0 011-1h6a1 1 0 011 1v3M7 17v2M17 17v2"/></svg>
             </div>
             <h3>We come to you</h3>
             <p>Mobile detailing across Redding, CA and Shasta County — at home, work, or wherever your vehicle is.</p>
           </article>
-          <article class="value-card tilt-card reveal">
+          <article class="value-card tilt-card glow-edge reveal">
             <div class="value-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
             <h3>Inside and outside</h3>
             <p>From a thorough vacuum and wipe-down to hand-wash, wheels, wax, and full deluxe packages.</p>
           </article>
-          <article class="value-card tilt-card reveal">
+          <article class="value-card tilt-card glow-edge reveal">
             <div class="value-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             </div>
@@ -93,6 +102,8 @@
         </div>
       </div>
     </section>
+
+    <div class="diag-divider diag-divider--teal" aria-hidden="true"></div>
 
     <section class="section section-dark">
       <div class="container">
@@ -122,24 +133,31 @@
     </section>
 
 
-    <section class="section-photo" style="--section-bg: url('assets/img/story-outside.jpg');" aria-label="Exterior detailing highlight">
-      <div class="container">
-        <div class="section-head reveal" style="margin-bottom:0;max-width:40ch;">
-          <p class="eyebrow">Mobile detailing</p>
-          <h2 style="margin-bottom:0.4rem;">We give you time for the things you love</h2>
-          <p>Professional interior and exterior care — we come to you across Redding and Shasta County.</p>
+    <div class="splash-pin">
+      <section class="section-photo splash-sticky" style="--section-bg: url('assets/img/story-outside.jpg');" aria-label="Exterior detailing highlight">
+        <div class="splash-sheen" aria-hidden="true"></div>
+        <div class="container">
+          <div class="section-head reveal splash-copy" style="margin-bottom:0;max-width:40ch;">
+            <p class="eyebrow">Mobile detailing</p>
+            <h2 style="margin-bottom:0.4rem;">We give you time for the things you love</h2>
+            <p>Professional interior and exterior care — we come to you across Redding and Shasta County.</p>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="diag-edge diag-edge--bottom diag-edge--dark" aria-hidden="true"></div>
+      </section>
+    </div>
 
-    <section class="section section-warm" id="packages-preview">
+    <div class="diag-divider diag-divider--warm" aria-hidden="true"></div>
+
+    <section class="section section-warm has-orbs" id="packages-preview">
+      <div class="float-orb float-orb--e" data-parallax="0.12" aria-hidden="true"></div>
       <div class="container">
         <div class="section-head centered reveal">
           <h2>Packages with clear estimates</h2>
           <p>Three marketed packages — full inclusions and price ranges. Final pricing depends on vehicle type when you book.</p>
         </div>
         <div class="pkg-grid">
-          <article class="pkg-card tilt-card reveal">
+          <article class="pkg-card tilt-card glow-edge reveal">
             <div class="pkg-media">
               <img src="assets/img/pkg-interior.jpg" alt="Interior detailing in progress — seats and cabin" width="1200" height="825" loading="lazy">
             </div>
@@ -156,7 +174,7 @@
               <a class="btn btn-secondary" href="packages.html">See details</a>
             </div>
           </article>
-          <article class="pkg-card featured tilt-card reveal">
+          <article class="pkg-card featured tilt-card glow-edge reveal">
             <div class="pkg-media">
               <span class="pkg-badge">Popular</span>
               <img src="assets/img/pkg-exterior.jpg" alt="Exterior hand-wash and wheel cleaning on a vehicle" width="1200" height="825" loading="lazy">
@@ -175,7 +193,7 @@
               <a class="btn btn-primary" href="packages.html">See details</a>
             </div>
           </article>
-          <article class="pkg-card tilt-card reveal">
+          <article class="pkg-card tilt-card glow-edge reveal">
             <div class="pkg-media">
               <img src="assets/img/pkg-deluxe.jpg" alt="Fully detailed vehicle after deluxe interior and exterior service" width="1200" height="825" loading="lazy">
             </div>
@@ -212,7 +230,7 @@
           ></iframe>
           <div class="booking-fallback">
             <p>Calendar not loading? Open booking in a new tab.</p>
-            <a class="btn btn-primary" href="https://cleandetailing.as.me/" target="_blank" rel="noopener noreferrer">Book at cleandetailing.as.me</a>
+            <a class="btn btn-primary btn-shimmer" href="https://cleandetailing.as.me/" target="_blank" rel="noopener noreferrer">Book at cleandetailing.as.me</a>
           </div>
         </div>
       </div>
@@ -248,18 +266,19 @@
             </p>
             <label class="sr-only" for="newsletter-email">Email address</label>
             <input id="newsletter-email" type="email" name="email" required placeholder="you@email.com" autocomplete="email">
-            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <button class="btn btn-primary btn-shimmer" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     </section>
 
     <section class="cta-band">
+      <div class="cta-band__glow" aria-hidden="true"></div>
       <div class="container">
         <h2>Ready for a clean car?</h2>
         <p>Call, text, or book online — we’d love to detail your vehicle.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="tel:+15303395877">Call (530) 339-5877</a>
+          <a class="btn btn-primary btn-shimmer" href="tel:+15303395877">Call (530) 339-5877</a>
           <a class="btn btn-ghost-light" href="#book">Book online</a>
         </div>
       </div>
